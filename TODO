@@ -1,0 +1,38 @@
+( sorry, but my english is neither as good as my math nor as my c++ ;)
+
+Bugs and Implementation Todos:
+    * Improve EReadError exception handling
+      (move to integer for error status and a list of error-specific data
+       e.g. the expected token, or the remaining expression string)
+    * Improve the TReader<>::readNumber() method to prevent wrong input and
+      parse exponential notations, too.
+    * Design/implementation of an expression matching module will may be used
+      for manipulating expressions (e.g. for simplifying/derivations/...)
+    * design of an scripting system for solving and visualization(!) of
+      mathematical problems (think about its file format (.mp/.math/...?)
+      (and design for its KPart Viewer implementation)
+    * simplifier: + and * gets a help method for matching left and right:
+        // pseudo example:
+        if (TSMatch *m = sMatch(<bool test-left>, <bool test-right>)) {
+            // m->left and m->right gets auto assigned by sMatch
+            // according to the match functions above
+            return new TAnother<T>(m->left->clone(), m->right->clone());
+        }
+
+Feature ToDos:
+  Folgende Module _muessen_ noch designed/implementiert werden:
+    * symbolische Errechnung von Definitions-/ Wertebereichen und
+      Definitionsluecken. (numeric_set<>???)
+    * symbolische Grenzwertberechnung an Definitionsluecken und im Unendlichen
+    * symbolischen Differenziale Generation (derive)
+    * symbolischen Integrale Generation (integral)
+    * Vereinfachung von mathematischen Ausdruecken (simplify)
+    * Expandierung von mathematischen Ausdruecken
+      (d.h. Reduzierung auf den Grad 1, soweit moeglich)
+    * Scripting System zur Loesung und Visualisierung mathematischer Probleme
+    *
+
+  WishList:
+    * Kaesetorte ;-P (*hehe*, cheese cake?)
+    *
+

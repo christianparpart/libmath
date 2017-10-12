@@ -1,0 +1,26 @@
+
+    Hi reader,
+
+This is my Math Type Library (MTL) and is part of the SurakWare Projects.
+If you believe that this package is out of date have a look at
+http://www.surakware.net/downloads/index.xml
+
+I am using GCC/3.0.3 with automake/1.5 and autoconf/2.50 (and
+doxygen 1.2.14). You'll perhaps need these things too if you wanna get the 
+same results as me;)
+
+GCC/3.x is a must since it is really more standard compliant than
+its prio versions.
+However, I'll try to code it backward compatible (using #ifdefs).
+
+For building that package the first time you may execute the
+script bootstrap. However, you shall read that script before you
+do execute it.
+
+To create the user API-documentation, call make using parameter api-doc
+at top source dir or in the doc directory itself.
+> make api-doc
+
+Thanks,
+Christian Parpart
+http://www.surakware.net
